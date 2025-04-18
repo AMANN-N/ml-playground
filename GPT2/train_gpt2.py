@@ -69,6 +69,7 @@ class GPTConfig:
     n_head: int = 12 
     n_embd: int = 768 
 
+
 class GPT(nn.Module):
 
     def __init__(self, config):
@@ -181,11 +182,6 @@ class GPT(nn.Module):
 
 
 
-
-
-
-
-
 # -----------------------------------------------------------------------------
 import tiktoken
 import numpy as np
@@ -233,7 +229,10 @@ class DataLoaderLite:
         return x, y
 
 
+##############################################################################
 
+#Model training + data loader + initialization done at this point, Further we try to speed up the training
+##############################################################################
 
 
 
@@ -313,13 +312,6 @@ else:
         device = "mps"
     print(f"using device: {device}")
 device_type = "cuda" if device.startswith("cuda") else "cpu"
-
-
-
-
-
-
-
 
 torch.manual_seed(1337)
 if torch.cuda.is_available():
