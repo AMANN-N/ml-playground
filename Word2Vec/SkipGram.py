@@ -25,6 +25,8 @@ class HierarchicalSoftmax(nn.Module):
                 batch_loss += loss
         return batch_loss / len(target_words)
 
+
+
 class SkipGram(nn.Module):
     def __init__(self, vocab_size, embedding_dim, hidden_dim, huffman_tree):
         super(SkipGram, self).__init__()
