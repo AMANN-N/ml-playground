@@ -78,3 +78,16 @@ If you wish to delve deeper into customizing the model:
 *   **Personality Tuning:** Refer to the guide "infusing identity to your nanochat" in the Discussions, which describes tuning the personality via synthetic data generation mixed into the midtraining and SFT stages.
 *   **Adding Abilities:** Consult the guide "counting r in strawberry (and how to add abilities generally)" for how to add new capabilities.
 *   **Scaling Up:** To train a larger model (e.g., the $300 tier d26 model), you would need to adjust parameters in `speedrun.sh`, primarily by downloading more data shards, increasing the model depth (`--depth=26`), and decreasing the device batch size (e.g., `32 -> 16`) to manage VRAM.
+
+
+
+
+
+
+
+
+
+
+Walkthrough - https://github.com/karpathy/nanochat/discussions/1
+https://deepwiki.com/karpathy/nanochat
+
